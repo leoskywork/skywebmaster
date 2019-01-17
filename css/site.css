@@ -1,0 +1,61 @@
+
+body {
+    
+    padding-bottom: 20px;	
+
+	margin: 0;
+}
+
+.top-banner{
+	padding: 10 200px;
+    color: white;
+    background: darkslategrey;
+    /* position: absolute; */
+    /* width: 100%; */
+    /* top: 0; */
+    font-size: 24px;
+}
+
+.top-banner a{
+	color: white;
+	text-decoration: none;
+}
+
+.app-name-sep{
+	padding-left:20px;
+}
+
+.welcome-message {
+	text-align: center;
+    margin-top: 20%;
+    margin-bottom: 20%;
+    color: darkslategrey;
+    font-size: xx-large;
+}
+
+.line-sep{
+    height: 1px;
+    background-color: darkslategrey;
+	/*margin: 0 200px; */
+}
+.footer{
+	color: darkslategrey;
+	margin: 0 200px;
+	height: 40px;
+	line-height: 40px;
+}
+
+.footer p {
+	margin-top: 0px;
+}
+
+.footer-subtext {
+    float: right;
+    color: darkslategrey;
+    font-size: small;
+    text-decoration: none;
+}
+
+.footer-subtext-focus{
+    color:dodgerblue;
+}
