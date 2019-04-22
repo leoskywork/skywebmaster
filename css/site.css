@@ -1,66 +1,71 @@
-
+/* tag override */
 body {
-    
-    padding-bottom: 20px;	
-
 	margin: 0;
 }
 
-.top-banner{
-	padding: 10 200px;
+a {
+    text-decoration: none;
+}
+
+/* common */
+
+.highlight-link{
+    color:dodgerblue;
+}
+
+/* small screen */
+@media(min-width: 640px){
+    .footer {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+/* main page */
+.top-banner {
     color: white;
     background: darkslategrey;
-    /* position: absolute; */
-    /* width: 100%; */
-    /* top: 0; */
-    font-size: 24px;
+    font-size: 1.4rem;
+    display: flex;
+    padding: 10px 0;
 }
 
-.top-banner a{
-	color: white;
-	text-decoration: none;
+.top-banner-item {
+    margin: auto; /* let its content centered, works with parent flex */
 }
 
-.app-name-sep{
-	padding-left: 10px;
+.top-banner-item a {
+    color: white;
 }
 
+.container {
+    display: flex;
+    height: 88vh; /* fixed: do not set by pixel. //use vh as unit */
+}
 .welcome-message {
-	text-align: center;
-    margin-top: 20%;
-    margin-bottom: 20%;
+    margin: auto; /* let text align center, both vertical and horizontal, work with parent flex */
     color: darkslategrey;
-    font-size: xx-large;
+    font-size: 2rem;
 }
 
-.line-sep{
+.line-cross {
     height: 1px;
     background-color: darkslategrey;
-	/*margin: 0 200px; */
 }
-.footer{
+
+.footer {
 	color: darkslategrey;
-	margin: 0 200px;
-	height: 40px;
-	line-height: 40px;
+    text-align: center;
+    font-size: 0.8em;
 }
 
-.footer p {
-	margin-top: 0px;
+.footer-item {
+    flex-basis: 30%;
+    padding: 10px;
+    box-sizing: border-box; /* include padding in width/height */
+
 }
 
-.footer p a {
-	
-}
-
-.footer-subtext {
-    float: right;
-    color: darkslategrey;
-    font-size: small;
-    text-decoration: none;
-	text-transform: uppercase;
-}
-
-.footer-subtext-focus{
-    color:dodgerblue;
+.footer-powered-by {
+    color: darkslategrey; /* override <a> tag */
 }
