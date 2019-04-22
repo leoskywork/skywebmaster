@@ -22,7 +22,7 @@ body {
 }
 
 .app-name-sep{
-	padding-left:20px;
+	padding-left: 10px;
 }
 
 .welcome-message {
@@ -49,11 +49,16 @@ body {
 	margin-top: 0px;
 }
 
+.footer p a {
+	
+}
+
 .footer-subtext {
     float: right;
     color: darkslategrey;
     font-size: small;
     text-decoration: none;
+	text-transform: uppercase;
 }
 
 .footer-subtext-focus{
