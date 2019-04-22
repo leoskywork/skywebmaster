@@ -5,8 +5,8 @@ function main () {
 	test();
 
 	function test () {
-	// const abc = Date.now()
-	// console.log('object :', object);
+		// const abc = Date.now()
+		// console.log('object :', object);
 		// let a = 'a test string';
 	}
 
