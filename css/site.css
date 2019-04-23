@@ -18,6 +18,10 @@ a {
     color: #888;
 }
 
+.leo-test{
+    color: #ccc;
+}
+
 /* small screen */
 @media(min-width: 640px){
     .footer {
