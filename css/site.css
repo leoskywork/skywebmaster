@@ -39,12 +39,12 @@ a {
     padding: 10px 0;
 }
 
-.top-banner-item {
-    margin: auto; /* let its content centered, works with parent flex */
+.top-banner a {
+    color: white;
 }
 
-.top-banner-item a {
-    color: white;
+.top-banner-item {
+    margin: auto; /* let its content centered, works with parent flex */
 }
 
 .container {
@@ -55,6 +55,22 @@ a {
     margin: auto; /* let text align center, both vertical and horizontal, work with parent flex */
     color: darkslategrey;
     font-size: 2rem;
+}
+
+.welcome-message .button {
+    color: #147bcd;
+    background-color: white;
+    border: 1px solid #1482d0;
+    border-radius: 6px;
+    font-size: 1.4rem;
+    padding: 5px 10px;
+    transition: 0.5s;
+    transition-timing-function: ease-in-out;
+}
+
+.welcome-message .button:hover {
+    color: white;
+    background-color: #147bcd;
 }
 
 .footer {
