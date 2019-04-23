@@ -10,9 +10,12 @@ a {
 }
 
 /* common */
-
-.highlight-link{
+.link-highlight{
     color:dodgerblue;
+}
+
+.color-light{
+    color: #888;
 }
 
 /* small screen */
@@ -42,7 +45,7 @@ a {
 
 .container {
     display: flex;
-    height: 88vh; /* fixed: do not set by pixel. //use vh as unit */
+    height: 84vh; /* fixed: do not set by pixel. //use vh as unit */
 }
 .welcome-message {
     margin: auto; /* let text align center, both vertical and horizontal, work with parent flex */
@@ -50,24 +53,15 @@ a {
     font-size: 2rem;
 }
 
-.line-cross {
-    height: 1px;
-    background-color: darkslategrey;
-}
-
 .footer {
-	color: darkslategrey;
     text-align: center;
     font-size: 0.8em;
+    margin-bottom: 10px;
 }
 
 .footer-item {
     flex-basis: 30%;
     padding: 10px;
     box-sizing: border-box; /* include padding in width/height */
-
 }
 
-.footer-powered-by {
-    color: darkslategrey; /* override <a> tag */
-}
