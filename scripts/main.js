@@ -13,7 +13,7 @@ function main () {
 	function init () {
 		// get live time locally first
 		updateUILiveTime(getLiveTimeLocally());
-		const onSuccess = (responseText) => updateUILiveTime(parseInt(responseText));
+		const onSuccess = updateUILiveTime;
 		getLiveTime(onSuccess);
 		getLiveTimeTimer(30 * 60, onSuccess);
 	}
@@ -43,7 +43,7 @@ function main () {
 
 		xmlhttp.onreadystatechange = function () {
 			if (xmlhttp.readyState === 4 && xmlhttp.status === 200) {
-				onSuccess(xmlhttp.responseText);
+				onSuccess(parseInt(xmlhttp.responseText));
 			}
 		};
 
